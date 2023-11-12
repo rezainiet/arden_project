@@ -58,7 +58,8 @@ html {
 
 .contact-form {
     width: 500px;
-    margin: 20px auto;
+    margin: 0px auto;
+    padding: 100px 0;
 }
 
 .contact-form label {
