@@ -1,8 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+
 }
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: url("https://webthemez.com/demo/gogym-single-page-bootstrap-4-template/assets/img/intro/img5.jpg") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-section button {
+    padding: 15px 30px;
+    font-size: 1em;
+    background-color: #e8491d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-section button:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .hero-section button {
+        padding: 12px 24px;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-section p {
+        font-size: 0.8em;
+        margin-bottom: 20px;
+    }
+
+    .hero-section button {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+}
+
 html {
     font-size: 16px;
     font-family: 'Arial', sans-serif;
@@ -76,6 +148,123 @@ a {
 }
 .nav-btn label span:not(:last-child) {
     margin-bottom: 7px;
+}
+
+
+.content-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.section-heading {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.objectives-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.objective {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.objective h3 {
+    color: #333;
+}
+
+.objective p {
+    color: #555;
+}
+
+.gym-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+section#key-audiences {
+    padding: 50px 0;
+}
+
+section#key-audiences h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.audience-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.audience-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        margin: 0 10px 10px 0;
+    }
+
+    section#hero {
+        padding: 80px 20px;
+    }
+
+    section#hero h2 {
+        font-size: 28px;
+    }
+
+    section#hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    section#key-audiences .audience-card {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content-section {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 992px) {
