@@ -649,6 +649,15 @@ body {
 
 
  @media screen and (max-width: 768px) {
+    .functional-section{
+        margin: 80px 10px;
+    }
+    .functional-img{
+        max-width: 100%;
+    }
+    .testimonial-container{
+        flex-direction: column;
+    }
      .testimonial {
          margin: 20px 0;
      }
@@ -715,6 +724,9 @@ body {
  }
 
  @media screen and (max-width: 768px) {
+    .objectives-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
      .content-section {
          grid-template-columns: 1fr;
      }

@@ -101,6 +101,15 @@ a {
     display: flex;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+        
+    }
+    }
+
 .navbar ul li a {
     padding: 0 16px;
     transition: all 0.2s ease-in-out;
