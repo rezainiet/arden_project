@@ -1,7 +1,9 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
 }
 
 html {
@@ -10,53 +12,44 @@ html {
 }
 
 
-/* Style the header */
-header {
-    background-color: #333;
+.contact {
     color: #fff;
-    padding: 10px;
+    background-image: url('/images/Gym-background.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/* Style the navigation menu */
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.contact-header {
+    margin: 20px 0;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
+.contact-input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* Add gap between input elements */
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+.contact-input-container>div {
+    flex: 1;
+    /* Distribute available space equally among child divs */
 }
 
-nav a:hover {
-    text-decoration: underline;
+.contact-input-container>div input {
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Style the main content area */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-h2 {
-    font-size: 24px;
-    margin-top: 40px;
-}
 
-h3 {
-    font-size: 20px;
-    margin-top: 30px;
-}
 
-p {
-    line-height: 1.5;
+.contact-title {
+    color: tomato;
+    font-weight: 900;
+    font-size: x-large;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .contact-info {
@@ -65,7 +58,8 @@ p {
 
 .contact-form {
     width: 500px;
-    margin: 0 auto;
+    margin: 0px auto;
+    padding: 100px 0;
 }
 
 .contact-form label {
@@ -73,19 +67,38 @@ p {
     margin-top: 10px;
 }
 
+.contact input, textarea, .btn {
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+
+.btn:active {
+    transform: scale(.95);
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 14px 10px;
     margin-top: 5px;
 }
 
 .contact-form input[type="submit"] {
-    background-color: #333;
+    background-color: tomato;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 14px 20px;
     cursor: pointer;
+    transition: .3s;
+    margin-top: 20px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #555;
 }
 
 
