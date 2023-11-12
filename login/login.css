@@ -1,5 +1,17 @@
 /* Basic styling for the login form */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
 
 .login {
     display: flex;
@@ -7,15 +19,13 @@
     height: 100vh;
 }
 
-
 .login-form {
     width: 360px;
     margin: auto;
     border-radius: 0.375rem;
-    /* Equivalent to 6px */
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     padding: 2.5rem;
-    /* Equivalent to 40px */
+    background-color: #333;
 }
 
 /* Title styling */
@@ -23,9 +33,7 @@
     font-size: xx-large;
     font-weight: bold;
     margin-bottom: 1.25rem;
-    /* Equivalent to 20px */
-    color: #333;
-    /* Equivalent to text-gray-700 */
+    color: #fff;
 }
 
 /* Container for form inputs and button */
@@ -33,9 +41,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.9375rem;
-    /* Equivalent to 15px */
     margin-bottom: 1.25rem;
-    /* Equivalent to 20px */
 }
 
 /* Styling for form inputs */
@@ -48,25 +54,23 @@
     padding: 14px;
     outline: none;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #fff;
     margin-top: 10px;
+    background-color: #1a1a1a;
+    color: #fff;
 }
 
 .input-container input:focus {
-    border: 1px solid #3B82F6;
+    border: 1px solid tomato;
 }
-
-
-
 
 .btn:active {
     transform: scale(.95);
 }
 
-
 /* Styling for submit button */
 .btn {
-    background-color: #3B82F6;
+    background-color: tomato;
     color: #fff;
     border: none;
     padding: 14px 20px;
@@ -76,16 +80,225 @@
 }
 
 .btn:hover {
-    background-color: #333;
+    background-color: #202020;
 }
 
 /* Styling for links */
 .text-primary {
     color: #4299e1;
-    /* Equivalent to text-primary */
     text-decoration: none;
 }
 
 .text-primary:hover {
     text-decoration: underline;
+}
+
+
+.navbar ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: #303030;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    max-width: 1248px;
+    padding: 0 24px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
+}
+
+.navbar h1 a,
+.navbar ul li a {
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 0 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+    color: orange;
+}
+
+
+/* Hamburger Menu*/
+#navcheck,
+.nav-btn,
+.backdrop {
+    display: none;
+}
+
+.nav-btn {
+    position: fixed;
+    right: 24px;
+    top: 26px;
+    z-index: 99;
+}
+
+.nav-btn label span {
+    display: block;
+    width: 30px;
+    height: 1.5px;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease-in-out,
+        -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -webkit-transition: background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease-in-out,
+        -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.3s ease-in-out;
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.3s ease-in-out, -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    position: relative;
+}
+
+.nav-btn label span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none !important;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    .navbar ul li a {
+        color: #303030;
+        width: 100%;
+        display: block;
+        padding: 16px;
+    }
+
+    #navcheck {
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 72px;
+        height: 72px;
+        z-index: 999;
+        cursor: pointer;
+        margin: 0;
+        display: block;
+    }
+
+    input#navcheck:checked~.nav-btn label span:first-child {
+        -webkit-transform: rotate(45deg) translate(6px, 6px);
+        transform: rotate(45deg) translate(6px, 6px);
+        top: 0;
+        left: 0;
+    }
+
+    input#navcheck:checked~.nav-btn label span:last-child {
+        -webkit-transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(6px, -6px);
+        top: 0;
+        left: 0;
+    }
+
+    input#navcheck:checked~.nav-btn label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    input#navcheck:checked~.header .navbar .nav-menu {
+        display: block !important;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+    }
+
+    input#navcheck:checked~.backdrop {
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.36);
+        width: 100%;
+        height: calc(100% - 72px);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-btn {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 24px;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+    }
+
+    .nav-menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 16px;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        width: 100%;
+        display: block;
+        padding: 16px;
+    }
+
+    #navcheck:checked~.nav-btn label span:first-child {
+        transform: rotate(45deg) translate(6px, 6px);
+        top: 0;
+        left: 0;
+    }
+
+    #navcheck:checked~.nav-btn label span:last-child {
+        transform: rotate(-45deg) translate(6px, -6px);
+        top: 0;
+        left: 0;
+    }
+
+    #navcheck:checked~.nav-btn label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #navcheck:checked~.nav-menu {
+        display: flex !important;
+    }
 }

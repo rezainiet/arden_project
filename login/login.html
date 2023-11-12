@@ -1,37 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Contact Us | Gym Name</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Fitness Studio</title>
     <link rel="stylesheet" href="login.css">
-    <!-- <link rel="stylesheet" href="/styles.css"> -->
 </head>
 
 <body>
 
+    <div class="navbar">
+        <h1>
+            <a href="#" class="nav-logo">Fitness <span style="color: tomato;">Studio</span></a>
+        </h1>
+        <input type="checkbox" id="navcheck">
+        <div class="nav-btn">
+            <label for="navcheck">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about/about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="/services/services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="/contact/contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="/login/login.html" class="nav-link">Login</a>
+            </li>
+        </ul>
+    </div>
+
     <section class="login">
         <form id="login-form" class="login-form">
-            <!-- Title -->
             <h1 class="form-title">Login</h1>
-
             <div class="form-group">
-                <!-- Email -->
                 <div class="input-container">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-
-                <!-- Password -->
                 <div class="input-container">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-
-                <!-- Submit Button -->
                 <button type="submit" class="btn">Login</button>
             </div>
-
-            <!-- Navigate to Register page -->
             <p style="text-align: center;">
                 <span>Don't have an account? <a href="/register/register.html" class="text-primary underline">Create an
                         account</a></span>
@@ -39,6 +62,7 @@
         </form>
     </section>
 
+    <script src="login.js"></script>
 </body>
 
 </html>

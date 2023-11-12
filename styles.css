@@ -9,15 +9,12 @@
 
  }
 
- /* .container{
-    padding: 50px;
-} */
 
  .hero-section {
      position: relative;
      text-align: center;
      color: #fff;
-     background: url("https://webthemez.com/demo/gogym-single-page-bootstrap-4-template/assets/img/intro/img5.jpg") center/cover no-repeat;
+     background: url("./images/hero_img.avif") center/cover no-repeat;
      height: 100vh;
      display: flex;
      flex-direction: column;
@@ -35,7 +32,7 @@
      margin-bottom: 30px;
  }
 
- .hero-section button {
+ .hero-section a {
      padding: 15px 30px;
      font-size: 1em;
      background-color: #e8491d;
@@ -86,7 +83,7 @@
      font-family: 'Arial', sans-serif;
  }
 
- li {
+ .navbar ul li {
      list-style: none;
  }
 
@@ -173,7 +170,7 @@
      max-width: 1440px;
      margin: auto;
      padding: 20px;
-     background-color: rgb(27, 27, 27)535;
+     background-color: #202020;
      border-radius: 8px;
      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
      display: grid;
@@ -187,7 +184,7 @@
      /* text-transform: uppercase; */
      text-align: center;
      font-size: 30px;
-     font-weight: ;
+     font-weight: 900;
      color: white;
      margin-bottom: 20px;
 
@@ -212,17 +209,17 @@
 
 
  .objective {
-     background-color: rgb(54, 54, 54)535;
+     background-color: #202020;
      border: 1px solid #ddd;
      border-radius: 8px;
      padding: 20px;
      margin-bottom: 20px;
      box-sizing: border-box;
-     transition: .3s;
+     transition: .5s;
  }
 
  .objective:hover {
-     box-shadow: orange 0px 0px 25px 4px;
+     box-shadow: orange 0px 0px 15px 2px;
  }
 
 
@@ -280,7 +277,7 @@
  }
 
  .audience-card:hover {
-     box-shadow: orange 0px 0px 30px 4px;
+     box-shadow: orange 0px 0px 20px 3px;
  }
 
  .audience-card img {
@@ -338,12 +335,13 @@
  }
 
  .functional-ul {
-     list-style-type: none;
-     padding: 0;
+/* list-style-type: disc; */
+    padding: 0;
      margin: 0;
  }
 
  .functional-li {
+    margin-left: 20px;
      margin-bottom: 10px;
  }
 
@@ -430,7 +428,7 @@
  }
 
  .testimonial:hover {
-     box-shadow: orange 0px 0px 25px 4px;
+     box-shadow: orange 0px 0px 15px 2px;
  }
 
  .testimonial img {
@@ -451,6 +449,204 @@
      font-size: 18px;
      color: #fff;
  }
+
+
+ /* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*//*--====Footer====--- */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.footer-section {
+    text-align: left;
+}
+
+.footer-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.logo{
+    padding-top: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: orange;
+}
+
+.come-with-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.come-with-us input[type="email"] {
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: 1px solid #555; /* Added border */
+    margin-top: 10px;
+    color: #fff;
+}
+
+.come-with-us button {
+    width: calc(100% - 30px);
+    background-color: tomato;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #555; /* Added border */
+}
+
+.come-with-us input[type="email"]:focus {
+    outline: none;
+    border-color: #555; /* Added border color on focus */
+}
+
+.come-with-us button:hover {
+    background-color: rgb(250, 49, 13)
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #66ccff;
+}
+
+
+.footer-border {
+    border: 1px solid #666;
+    width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.footer-section.border-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-section.border-section p {
+    margin: 0;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+/* Custom range from 450px to 850px */
+@media screen and (min-width: 350px) and (max-width: 550px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media screen and (min-width: 550px) and (max-width: 750px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1040px) {
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr; /* First and last grid have extra width */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-container {
+        grid-template-columns: 1.8fr 1fr 1fr 1fr 1.8fr; /* First and last grid have extra width */
+    }
+}
+
+
 
  @media screen and (max-width: 768px) {
      .testimonial {
@@ -476,7 +672,7 @@
  }
 
  footer {
-     background-color: #333;
+     background-color: #202020;
      color: #fff;
      text-align: center;
      padding: 20px 0;
