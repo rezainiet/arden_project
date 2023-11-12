@@ -110,8 +110,6 @@ body {
     color: orange;
 }
 
-
-
 .logo{
     padding-top: 10px;
 }
@@ -124,7 +122,7 @@ body {
 }
 
 .footer-links li {
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 .footer-links a {
