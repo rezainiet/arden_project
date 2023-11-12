@@ -9,34 +9,6 @@ html {
     font-family: 'Arial', sans-serif;
 }
 
-/* Style the header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
-
-/* Style the navigation menu */
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 /* Style the main content area */
 main {
     max-width: 800px;
@@ -213,6 +185,122 @@ body {
     gap: 20px;
 }
 
+
+.navbar ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: #303030;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    max-width: 1248px;
+    padding: 0 24px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
+}
+
+.navbar h1 a,
+.navbar ul li a {
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 0 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+    color: orange;
+}
+
+
+/* Hamburger Menu*/
+#navcheck,
+.nav-btn,
+.backdrop {
+    display: none;
+}
+
+.nav-btn {
+    position: fixed;
+    right: 24px;
+    top: 26px;
+    z-index: 99;
+}
+
+.nav-btn label span {
+    display: block;
+    width: 30px;
+    height: 1.5px;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease-in-out,
+        -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -webkit-transition: background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease-in-out,
+        -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.3s ease-in-out;
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.3s ease-in-out, -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    position: relative;
+}
+
+.nav-btn label span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        margin: 0 10px 10px 0;
+    }
+
+    section#hero {
+        padding: 80px 20px;
+    }
+
+    section#hero h2 {
+        font-size: 28px;
+    }
+
+    section#hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    section#key-audiences .audience-card {
+        width: 100%;
+    }
+}
 /* Custom range from 450px to 850px */
 @media screen and (min-width: 350px) and (max-width: 550px) {
     .footer-container {

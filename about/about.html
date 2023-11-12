@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
-    <title>About Us | Gym Name</title>
+    <title>About Us | Fitness Studio</title>
 </head>
 
 <body>
@@ -20,11 +20,23 @@
     </div>
     <!--Hamburger menu end-->
     <!--Header start-->
+    <!--Hamburger menu start-->
+    <input type="checkbox" id="navcheck">
+    <div class="nav-btn">
+        <label htmlfor="navcheck">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <!--Hamburger menu end-->
+    <!--Header start-->
     <header class="header">
         <nav class="navbar">
             <!--Logo-->
+
             <h1>
-                <a href="#" class="nav-logo">Logo Here!</a>
+                <a href="#" class="nav-logo">Fitness <span style="color: tomato;">Studio</span></a>
             </h1>
             <!--Logo-->
             <!--Navigation-->
@@ -41,17 +53,22 @@
                 <li class="nav-item">
                     <a href="/contact/contact.html" class="nav-link">Contact</a>
                 </li>
+
+<li class="nav-item">
+                    <a href="/login/login.html" class="nav-link">Login</a>
+                </li>
             </ul>
             <!--Navigation-->
         </nav>
     </header>
+    <div class="backdrop"></div>
     <!--Header End-->
     <main>
         <h2>About Us</h2>
-        <p>Welcome to Gym Name, your ultimate fitness destination. We are dedicated to helping you achieve your fitness
+        <p>Welcome to Fitness Studio, your ultimate fitness destination. We are dedicated to helping you achieve your fitness
             goals and lead a healthy lifestyle.</p>
         <h3>Our Mission</h3>
-        <p>At Gym Name, our mission is to provide a supportive and motivating environment for individuals of all fitness
+        <p>At Fitness Studio, our mission is to provide a supportive and motivating environment for individuals of all fitness
             levels. We strive to create a community that inspires and empowers our members to reach their full
             potential.</p>
         <h3>Our Facilities</h3>
@@ -64,12 +81,78 @@
         <p>We offer flexible membership options to suit your needs. Whether you prefer short-term or long-term
             commitments, we have membership plans that fit your lifestyle and budget.</p>
         <h3>Join Our Community</h3>
-        <p>Ready to start your fitness journey? Join Gym Name today and become part of our vibrant fitness community.
+        <p>Ready to start your fitness journey? Join Fitness Studio today and become part of our vibrant fitness community.
             Visit our facility or contact us for more information.</p>
     </main>
+    
+
+    
+    <!-- Footer Section -->
+
     <footer>
-        <p>&copy; 2023 Gym Name. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    
+                    <h1 class="nav-logo" style="color: #ddd; margin-bottom: 25px;">Fitness <span style="color: tomato;">Studio</span></h1>
+                    <ul class="footer-links">
+                        <li><strong>Email:</strong> info@example.com</li>
+                        <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+                        <li><strong>Address:</strong> 123 Street, Cityville, Country</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h2>Our Gym</h2>
+                    <ul class="footer-links">
+                        <li><a href="/about/about.html">About Us</a></li>
+                        <li><a href="/services/services.html">Our Services</a></li>
+                        <li><a href="/contact/contact.html">Contact Us</a></li>
+                        <li><a href="/contact/contact.html">Get in Touch</a></li>
+                        <li><a href="/contact/contact.html">Reach Out</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Pages</h2>
+                    <ul class="footer-links">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Meet Our Trainers</a></li>
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Special Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h2>Links</h2>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Tearms of use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Join with Us</h2>
+                    <div class="come-with-us">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Horizontal border outside the container -->
+            <div class="footer-section border-section">
+                <hr class="footer-border">
+                <p>&copy; 2023 Fitness Studio. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    
 </body>
 
 </html>
