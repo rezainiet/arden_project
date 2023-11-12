@@ -63,6 +63,11 @@ p {
     margin-bottom: 40px;
 }
 
+.contact-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
 .contact-form label {
     display: block;
     margin-top: 10px;
@@ -82,6 +87,7 @@ p {
     padding: 10px 20px;
     cursor: pointer;
 }
+
 
 /* Style the footer */
 footer {
